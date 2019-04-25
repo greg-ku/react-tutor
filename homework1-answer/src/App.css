@@ -1,33 +1,205 @@
-.App {
-  text-align: center;
+body {
+  font-family: Roboto-Italic;
+  font-size: 16px;
+  background-color: #e1e1e1;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+button, input, textarea {
+  outline: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*
+ * customize module style
+ */
+.react-datepicker-wrapper input {
+  width: 160px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+.react-datepicker-wrapper input:focus {
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 4px 0 #4a90e2;
+}
+
+.react-time-picker__wrapper {
+  width: 160px;
+  font-size: 16px;
+  padding: 6px 16px;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: inherit;
+  line-height: 1;
+  background-color: white;
+}
+.time-picker-focused > .react-time-picker__wrapper {
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 4px 0 #4a90e2;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  min-height: 76px;
+  background-color: #4a90e2;
+}
+
+.row {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 22px 0 27px 0;
+}
+
+.add-btn {
+  background-color: white;
+  width: 100%;
+  padding: 18px 33px;
+  border: 2px solid #c8c8c8;
+  border-radius: 5px;
+  color: #c8c8c8;
+  font-size: 24px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-nowrap {
+  overflow: hidden;
+}
+
+.task {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.task-title {
+  padding: 24px 32px 16px;
+}
+.task-content {
+  padding: 22px 78px 0 72px;
+}
+.task-content > .table {
+  padding-bottom: 22px;
+  width: 100%;
+}
+.task-content > .table > .table-row > .table-cell:first-child {
+  padding-right: 11px;
+  width: 20px;
+}
+.task-content > .table > .table-row:first-child > .table-cell {
+  padding-bottom: 8px;
+}
+
+.checkbox {
+  font-size: 24px;
+  color: #4a90e2;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.checkbox-unchecked {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.ic-star {
+  margin: 0 32px 0 16px;
+}
+.ic-star, .ic-pen {
+  display: inherit;
+  font-size: 24px;
+  cursor: pointer;
+}
+.ic-star.checked {
+  color: #f5a623;
+}
+.ic-pen.checked {
+  color: #4a90e2;
+}
+
+.custom-input {
+  display: inherit;
+  font-size: 24px;
+  min-height: 28px;
+}
+.custom-input > .preview {
+  line-height: 1;
+  font-weight: bold;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.custom-input > .input {
+  font-size: 24px;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.br {
+  height: 3px;
+  background-color: #c8c8c8;
+}
+
+.table {
+  display: table;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+
+.textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 2px;
+  resize: none;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+.textarea:focus {
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 4px 0 #4a90e2;
+}
+
+.custom-btn {
+  font-size: 24px;
+  width: 50%;
+  padding: 16px 0;
+  border: 0;
+  color: #d0021b;
+  background-color: white;
+  cursor: pointer;
+}
+.custom-btn:hover {
+  background-color: #fdfdfd;
+}
+.custom-btn.primary {
   color: white;
+  background-color: #4a90e2;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-btn.primary:hover {
+  background-color: #3982d7;
 }
