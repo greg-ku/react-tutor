@@ -47,7 +47,14 @@ button, input, textarea {
 
 .header {
   min-height: 76px;
+  width: 100vw;
   background-color: #4a90e2;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.body {
+  margin-top: 76px;
 }
 
 .row {
@@ -94,6 +101,9 @@ button, input, textarea {
 .task-title {
   padding: 24px 32px 16px;
 }
+.task-title.important {
+  background-color: #fff2dc;
+}
 .task-content {
   padding: 22px 78px 0 72px;
 }
@@ -109,6 +119,10 @@ button, input, textarea {
   padding-bottom: 8px;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 .checkbox {
   font-size: 24px;
   color: #4a90e2;
@@ -121,6 +135,15 @@ button, input, textarea {
   height: 24px;
   border-radius: 2px;
   background-color: white;
+}
+.checkbox-checked-wrapper {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+}
+.checkbox-checked-wrapper > svg {
+  vertical-align: top;
 }
 
 .ic-star {

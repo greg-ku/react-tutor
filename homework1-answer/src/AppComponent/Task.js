@@ -119,9 +119,9 @@ class Task extends Component {
     const todo = this.state.editing ? this.state.tempTodo : this.props.todo;
     return (
       <div className="task">
-        <div className="task-title flex">
+        <div className={todo.isImportant ? 'task-title flex important' : 'task-title flex'}>
           <CheckBox checked={todo.checked} onClick={this.onCheckedToggle}/>
-          <div className="flex-grow flex-nowrap">
+          <div className={todo.checked && todo.title ? 'flex-grow flex-nowrap line-through' : 'flex-grow flex-nowrap'}>
             <Input value={todo.title} onChange={this.onTitleChnage}/>
           </div>
           <Star checked={todo.isImportant} onClick={this.onStarToggle}/>

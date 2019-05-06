@@ -8,7 +8,7 @@ const CheckBox = (props) => {
       <input type="checkbox" className="hide" checked={props.checked} />
       {
         props.checked
-        ? <FontAwesomeIcon icon={faCheckSquare} onClick={props.onClick}/>
+        ? <span className="checkbox-checked-wrapper"><FontAwesomeIcon icon={faCheckSquare} onClick={props.onClick}/></span>
         : <span className="checkbox-unchecked" onClick={props.onClick}></span>
       }
     </label>
