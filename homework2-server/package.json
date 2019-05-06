@@ -1,0 +1,23 @@
+{
+  "name": "homework2-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "todolist",
+    "todo"
+  ],
+  "author": "greg-ku",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "node-json-db": "^0.11.0",
+    "uuid": "^3.3.2"
+  }
+}
