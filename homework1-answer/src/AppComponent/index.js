@@ -34,6 +34,10 @@ const AppComponent = (props) => {
                 todo={todo.entity}
               />)
             }
+
+            <span className="task-count">
+              {props.todos.filter(todo => !todo.entity.checked).length} tasks left
+            </span>
           </div>
         </div>
       </div>

@@ -231,3 +231,9 @@ button, input, textarea {
 .custom-btn.primary:hover {
   background-color: #3982d7;
 }
+
+.task-count {
+  margin-left: 32px;
+  color: #c8c8c8;
+  font-size: 24px;
+}
