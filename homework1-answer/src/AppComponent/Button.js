@@ -4,7 +4,7 @@ const Button = (props) => {
   const { primary } = props;
   const className = 'custom-btn' + (primary ? ' primary' : '');
   return (
-    <button className={className}>{props.children}</button>
+    <button className={className} onClick={props.onClick}>{props.children}</button>
   );
 };
 

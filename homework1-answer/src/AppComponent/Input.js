@@ -31,6 +31,7 @@ class Input extends Component {
           className={this.state.isFocused ? 'input' : 'input hide'}
           placeholder="Type Something Here..."
           value={this.props.value}
+          onChange={this.props.onChange}
           ref={this.inputRef}
           onBlur={this.onInputBlur}
         />
